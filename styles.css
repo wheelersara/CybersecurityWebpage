@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    background-color: #011F26;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: 100;
+}
+
+header h1{
+    color: white;
+    display: flex;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 100;
+}
+nav {
+    top: 95px;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: #025E73;
+    align-content: center;
+    z-index: 100;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 36px;
+    text-align: left;
+    margin-left: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 100;
+}
+
+.contentcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: 10px;
+    margin-bottom: 45px;
+    gap: 30px;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: lightblue;
+    border-radius:10px;
+    border: 2px solid darkblue;
+    height: auto;
+    width: 25%;
+    padding: 15px;
+
+}
+
+
+
+.content p{
+    color: black;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.content h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 28px;
+    margin: 5px;
+    text-align: center;
+}
+
+.content img{
+    max-width: 200px; 
+    height: 100px; 
+    display: block; 
+    margin: 10px auto;
+}
+
+footer {
+    position: fixed;
+    background-color: #011F26;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    align-items: center;
+}
+
+footer h1{
+    color: white;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.button {
+    background-color: #025E73;
+    border-radius: 10px;
+    height: 25 px;
+    width: auto;
+    bottom: 0;
+    align-self: center;
+    margin-top: auto;
+    padding: 10px;
+}
+
+.button a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.pagecontent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: lightblue;
+    border-radius:10px;
+    border: 2px solid darkblue;
+    height: auto;
+    width: 95%;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.pagecontent p{
+    color: black;
+    font-size: 20px;
+    margin-left: 35px;
+    margin-right: auto;
+}
+
+.pagecontent h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 32px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.pagecontent img{
+    width: 200px; 
+    height: 100px; 
+    align-self: flex-start; 
+    margin: 5px;
+}
+
+.pagecontentcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: 10px;
+    margin-bottom: 45px;
+    gap: 10px;
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    nav a {
+        font-size: 30px;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .pagecontent {
+        width: 80%;
+    }
+
+    .pagecontent img{
+        max-width: 150px;
+    }
+
+    .content img{
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 30px;
+    }
+    nav a {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content img {
+        max-width: 100px;
+    }
+
+    .pagecontent hi{
+        font-size: 24px;
+    }
+
+    .pagecontent img {
+        max-width: 100px;
+    }
+    
+    .button a {
+        font-size: 12px;
+    }
+
+    footer h1 {
+        font-size: 18px;
+    }
+}
+
